@@ -1,0 +1,575 @@
+{
+  "paper_title": "Monaural Continuous-Radius Regional Speech Extraction with Cross-Radius Consistency Learning",
+  "paper_status": "supplied manuscript draft; authors not finalized",
+  "paper_sha256": "956a7b10d14635f79cea19867fe65176aba87426d892597597185b64b3c5c13e",
+  "model": {
+    "checkpoint": "runs/mono_drr_offline_rir_distance_continuous_targetrms_consistency_t1rebalance_from_best48/checkpoints/_keep_best_epoch_0048.pt",
+    "epoch": 48,
+    "sha256": "a92aace3cf111371b8f3067b96f18273afb878634383ae4b1b9206a03bc94343"
+  },
+  "audio": {
+    "selection": "Purposefully selected qualitative examples, not random samples or subjective listening scores.",
+    "amplitude": "Original FLOAT WAV bytes. No independent normalization.",
+    "source": "Simulated mixtures from the project validation speech library and offline room impulse responses.",
+    "groups": [
+      {
+        "id": "partial",
+        "profile": "01",
+        "sample_index": 7,
+        "distances_m": [
+          0.4082699418067932,
+          1.3732335567474365
+        ],
+        "source_gains_db": [
+          1.246983528137207,
+          -1.246983528137207
+        ],
+        "noise_snr_db": null,
+        "seed": 20260826,
+        "seed_verified_by_input_replay": true,
+        "evaluation_directory": "test/rir_distance_21profile_continuous_t1rebalance_ep48_cpu_1234m",
+        "files": [
+          {
+            "role": "input",
+            "path": "assets/audio/partial_p07_s007_input.wav",
+            "radius": null,
+            "target_count": null,
+            "metrics": {},
+            "duration_seconds": 4.5,
+            "sample_rate": 16000,
+            "channels": 1,
+            "subtype": "FLOAT",
+            "sha256": "4aa6f0cc86eb4315fee42fe891265de0871b7b0997972c3ef9782b3773257870"
+          },
+          {
+            "role": "output",
+            "path": "assets/audio/partial_p07_s007_r1m.wav",
+            "radius": 1,
+            "target_count": 1,
+            "metrics": {
+              "snr_db": 19.143704570649867,
+              "si_sdr_db": 19.093215942382812,
+              "input_si_sdr_db": 10.70436954498291,
+              "si_sdri_db": 8.388846397399902,
+              "attenuation_db": null,
+              "output_rms_db_vs_target": -0.029175374802013605
+            },
+            "duration_seconds": 4.5,
+            "sample_rate": 16000,
+            "channels": 1,
+            "subtype": "FLOAT",
+            "sha256": "788ebec50352c247d8058efc97e79ba4a70e9ef6b9dfdc5ef4609bee8ce79b47"
+          },
+          {
+            "role": "output",
+            "path": "assets/audio/partial_p07_s007_r2m.wav",
+            "radius": 2,
+            "target_count": 2,
+            "metrics": {
+              "snr_db": 32.84921751899452,
+              "si_sdr_db": 33.03824996948242,
+              "input_si_sdr_db": null,
+              "si_sdri_db": null,
+              "attenuation_db": null,
+              "output_rms_db_vs_target": -0.04333548344841702
+            },
+            "duration_seconds": 4.5,
+            "sample_rate": 16000,
+            "channels": 1,
+            "subtype": "FLOAT",
+            "sha256": "ad4163579979e979508e7b95e1070b2eaae491394f7baef62e3c2dacc657ecfd"
+          },
+          {
+            "role": "output",
+            "path": "assets/audio/partial_p07_s007_r3m.wav",
+            "radius": 3,
+            "target_count": 2,
+            "metrics": {
+              "snr_db": 33.22263074300131,
+              "si_sdr_db": 33.37255096435547,
+              "input_si_sdr_db": null,
+              "si_sdri_db": null,
+              "attenuation_db": null,
+              "output_rms_db_vs_target": -0.03722797069412148
+            },
+            "duration_seconds": 4.5,
+            "sample_rate": 16000,
+            "channels": 1,
+            "subtype": "FLOAT",
+            "sha256": "7f3e5e4f0d88b5e9adff3b81acd6214f74a08d84a69c2027455a2ae771b386f7"
+          },
+          {
+            "role": "output",
+            "path": "assets/audio/partial_p07_s007_r4m.wav",
+            "radius": 4,
+            "target_count": 2,
+            "metrics": {
+              "snr_db": 32.426516006117474,
+              "si_sdr_db": 32.54839324951172,
+              "input_si_sdr_db": null,
+              "si_sdri_db": null,
+              "attenuation_db": null,
+              "output_rms_db_vs_target": -0.03739667991989946
+            },
+            "duration_seconds": 4.5,
+            "sample_rate": 16000,
+            "channels": 1,
+            "subtype": "FLOAT",
+            "sha256": "78dbe89f39f9efb3d47dc369d017f06eb94abf10c8c992233cedd7b29d6caa8d"
+          }
+        ]
+      },
+      {
+        "id": "full",
+        "profile": "00",
+        "sample_index": 6,
+        "distances_m": [
+          0.5776215195655823,
+          0.26164570450782776
+        ],
+        "source_gains_db": [
+          -2.8459644317626953,
+          2.8459644317626953
+        ],
+        "noise_snr_db": null,
+        "seed": 20260826,
+        "seed_verified_by_input_replay": true,
+        "evaluation_directory": "test/rir_distance_21profile_continuous_t1rebalance_ep48_cpu_1234m",
+        "files": [
+          {
+            "role": "input",
+            "path": "assets/audio/full_p06_s006_input.wav",
+            "radius": null,
+            "target_count": null,
+            "metrics": {},
+            "duration_seconds": 4.5,
+            "sample_rate": 16000,
+            "channels": 1,
+            "subtype": "FLOAT",
+            "sha256": "ab1c8826b79965999ec439cf8f728644af1e61d1d8eb443b9a10764f5e846f14"
+          },
+          {
+            "role": "output",
+            "path": "assets/audio/full_p06_s006_r1m.wav",
+            "radius": 1,
+            "target_count": 2,
+            "metrics": {
+              "snr_db": 32.48181161624376,
+              "si_sdr_db": 33.0764045715332,
+              "input_si_sdr_db": null,
+              "si_sdri_db": null,
+              "attenuation_db": null,
+              "output_rms_db_vs_target": -0.07643080858886499
+            },
+            "duration_seconds": 4.5,
+            "sample_rate": 16000,
+            "channels": 1,
+            "subtype": "FLOAT",
+            "sha256": "bf95a6f8de91a0ef4053882336bd2f5435f0077752f61ec0d8e0472b349412cf"
+          },
+          {
+            "role": "output",
+            "path": "assets/audio/full_p06_s006_r2m.wav",
+            "radius": 2,
+            "target_count": 2,
+            "metrics": {
+              "snr_db": 34.64340246596763,
+              "si_sdr_db": 34.67426681518555,
+              "input_si_sdr_db": null,
+              "si_sdri_db": null,
+              "attenuation_db": null,
+              "output_rms_db_vs_target": -0.015365177019645638
+            },
+            "duration_seconds": 4.5,
+            "sample_rate": 16000,
+            "channels": 1,
+            "subtype": "FLOAT",
+            "sha256": "065c729b71cdaa619e3a3415c64780b09383571fd0dacab0d15163beab772e2e"
+          },
+          {
+            "role": "output",
+            "path": "assets/audio/full_p06_s006_r3m.wav",
+            "radius": 3,
+            "target_count": 2,
+            "metrics": {
+              "snr_db": 34.869785707318435,
+              "si_sdr_db": 34.873836517333984,
+              "input_si_sdr_db": null,
+              "si_sdri_db": null,
+              "attenuation_db": null,
+              "output_rms_db_vs_target": -0.006998129459478031
+            },
+            "duration_seconds": 4.5,
+            "sample_rate": 16000,
+            "channels": 1,
+            "subtype": "FLOAT",
+            "sha256": "015c661b4b0f4a0550530855bd0d9970d1e1dbd81909c2306f8a40c1de2b3a1d"
+          },
+          {
+            "role": "output",
+            "path": "assets/audio/full_p06_s006_r4m.wav",
+            "radius": 4,
+            "target_count": 2,
+            "metrics": {
+              "snr_db": 34.71050413352563,
+              "si_sdr_db": 34.726131439208984,
+              "input_si_sdr_db": null,
+              "si_sdri_db": null,
+              "attenuation_db": null,
+              "output_rms_db_vs_target": -0.011489957168191789
+            },
+            "duration_seconds": 4.5,
+            "sample_rate": 16000,
+            "channels": 1,
+            "subtype": "FLOAT",
+            "sha256": "93e3be3cdf11e17bfed862b43f2d0a21730fa820c453ccfec58f0f722a657950"
+          }
+        ]
+      },
+      {
+        "id": "empty",
+        "profile": "3",
+        "sample_index": 4,
+        "distances_m": [
+          3.538729667663574
+        ],
+        "source_gains_db": [
+          0,
+          0
+        ],
+        "noise_snr_db": null,
+        "seed": 20260826,
+        "seed_verified_by_input_replay": true,
+        "evaluation_directory": "test/rir_distance_21profile_continuous_t1rebalance_ep48_cpu_1234m",
+        "files": [
+          {
+            "role": "input",
+            "path": "assets/audio/empty_p04_s004_input.wav",
+            "radius": null,
+            "target_count": null,
+            "metrics": {},
+            "duration_seconds": 4.5,
+            "sample_rate": 16000,
+            "channels": 1,
+            "subtype": "FLOAT",
+            "sha256": "21fbbf7f300f5ac266db42748df9d96316900e7dc94a3841cfbd41409aba5c20"
+          },
+          {
+            "role": "output",
+            "path": "assets/audio/empty_p04_s004_r1m.wav",
+            "radius": 1,
+            "target_count": 0,
+            "metrics": {
+              "snr_db": null,
+              "si_sdr_db": null,
+              "input_si_sdr_db": null,
+              "si_sdri_db": null,
+              "attenuation_db": 76.0042620089991,
+              "output_rms_db_vs_target": null
+            },
+            "duration_seconds": 4.5,
+            "sample_rate": 16000,
+            "channels": 1,
+            "subtype": "FLOAT",
+            "sha256": "fc8cc623d3548e2738f6bba40a240db261ef242df3f58d06cadeb742e06466d9"
+          },
+          {
+            "role": "output",
+            "path": "assets/audio/empty_p04_s004_r2m.wav",
+            "radius": 2,
+            "target_count": 0,
+            "metrics": {
+              "snr_db": null,
+              "si_sdr_db": null,
+              "input_si_sdr_db": null,
+              "si_sdri_db": null,
+              "attenuation_db": 73.91276792764035,
+              "output_rms_db_vs_target": null
+            },
+            "duration_seconds": 4.5,
+            "sample_rate": 16000,
+            "channels": 1,
+            "subtype": "FLOAT",
+            "sha256": "3d7dc2b4f51d2426c007b5c2bcec63b165a40171f7c4fb8a5d3dd6f80838d7ec"
+          },
+          {
+            "role": "output",
+            "path": "assets/audio/empty_p04_s004_r3m.wav",
+            "radius": 3,
+            "target_count": 0,
+            "metrics": {
+              "snr_db": null,
+              "si_sdr_db": null,
+              "input_si_sdr_db": null,
+              "si_sdri_db": null,
+              "attenuation_db": 72.49849865671523,
+              "output_rms_db_vs_target": null
+            },
+            "duration_seconds": 4.5,
+            "sample_rate": 16000,
+            "channels": 1,
+            "subtype": "FLOAT",
+            "sha256": "f390d41342423969693cdc8fca107063c8ff1d52f330dc4635fb2c7489738337"
+          },
+          {
+            "role": "output",
+            "path": "assets/audio/empty_p04_s004_r4m.wav",
+            "radius": 4,
+            "target_count": 1,
+            "metrics": {
+              "snr_db": 34.84789505989038,
+              "si_sdr_db": 34.846370697021484,
+              "input_si_sdr_db": null,
+              "si_sdri_db": null,
+              "attenuation_db": null,
+              "output_rms_db_vs_target": -0.0032765929582404428
+            },
+            "duration_seconds": 4.5,
+            "sample_rate": 16000,
+            "channels": 1,
+            "subtype": "FLOAT",
+            "sha256": "23cf5a7ee1a07c94777414b78e750c84b64c7b59a90595a7d41f8e16a5b1ca63"
+          }
+        ]
+      },
+      {
+        "id": "three",
+        "profile": "022",
+        "sample_index": 30,
+        "distances_m": [
+          0.4324435591697693,
+          2.9221320152282715,
+          2.3353095054626465
+        ],
+        "source_gains_db": [
+          -1.3383898735046387,
+          1.3383898735046387,
+          0
+        ],
+        "noise_snr_db": null,
+        "seed": 20260826,
+        "seed_verified_by_input_replay": true,
+        "evaluation_directory": "test/rir_distance_t1rebalance_ep48_3spk_clean_gpu",
+        "files": [
+          {
+            "role": "input",
+            "path": "assets/audio/three_p30_s030_input.wav",
+            "radius": null,
+            "target_count": null,
+            "metrics": {},
+            "duration_seconds": 4.5,
+            "sample_rate": 16000,
+            "channels": 1,
+            "subtype": "FLOAT",
+            "sha256": "37515c482fa96401546ee1b0b9bde48056469b2402a36febbb7a55ae9af3fa43"
+          },
+          {
+            "role": "output",
+            "path": "assets/audio/three_p30_s030_r1m.wav",
+            "radius": 1,
+            "target_count": 1,
+            "metrics": {
+              "snr_db": 16.77737409242623,
+              "si_sdr_db": 16.6863956451416,
+              "input_si_sdr_db": 9.473162651062012,
+              "si_sdri_db": 7.21323299407959,
+              "attenuation_db": null,
+              "output_rms_db_vs_target": -0.07117208324803856
+            },
+            "duration_seconds": 4.5,
+            "sample_rate": 16000,
+            "channels": 1,
+            "subtype": "FLOAT",
+            "sha256": "21a414ae3e83ed674b589754e197b9d9e3e163987d7f59972eed762fd35145a1"
+          },
+          {
+            "role": "output",
+            "path": "assets/audio/three_p30_s030_r2m.wav",
+            "radius": 2,
+            "target_count": 1,
+            "metrics": {
+              "snr_db": 16.26117507876326,
+              "si_sdr_db": 16.173437118530273,
+              "input_si_sdr_db": 9.473162651062012,
+              "si_sdri_db": 6.700274467468262,
+              "attenuation_db": null,
+              "output_rms_db_vs_target": -0.022385361137506943
+            },
+            "duration_seconds": 4.5,
+            "sample_rate": 16000,
+            "channels": 1,
+            "subtype": "FLOAT",
+            "sha256": "bf5aa0e8c1f930f980c90dda4486be034655d4dec5afd5fbf21510aa5f6ad23e"
+          },
+          {
+            "role": "output",
+            "path": "assets/audio/three_p30_s030_r3m.wav",
+            "radius": 3,
+            "target_count": 3,
+            "metrics": {
+              "snr_db": 27.76343598573034,
+              "si_sdr_db": 28.1772518157959,
+              "input_si_sdr_db": null,
+              "si_sdri_db": null,
+              "attenuation_db": null,
+              "output_rms_db_vs_target": -0.11530680195363249
+            },
+            "duration_seconds": 4.5,
+            "sample_rate": 16000,
+            "channels": 1,
+            "subtype": "FLOAT",
+            "sha256": "e9baa16e1977ce5353339dfdce632241d6b695a75df9502544804091292cd977"
+          },
+          {
+            "role": "output",
+            "path": "assets/audio/three_p30_s030_r4m.wav",
+            "radius": 4,
+            "target_count": 3,
+            "metrics": {
+              "snr_db": 31.008528275291383,
+              "si_sdr_db": 31.259395599365234,
+              "input_si_sdr_db": null,
+              "si_sdri_db": null,
+              "attenuation_db": null,
+              "output_rms_db_vs_target": -0.061785789515222
+            },
+            "duration_seconds": 4.5,
+            "sample_rate": 16000,
+            "channels": 1,
+            "subtype": "FLOAT",
+            "sha256": "55c919bc68d9e4c069ffaefad23720f34746da16b7e5fd2ff847c247f1d591c5"
+          }
+        ]
+      },
+      {
+        "id": "noisy",
+        "profile": "03",
+        "sample_index": 30,
+        "distances_m": [
+          0.4324435591697693,
+          3.913651704788208
+        ],
+        "source_gains_db": [
+          -0.838553786277771,
+          0.838553786277771
+        ],
+        "noise_snr_db": 10,
+        "seed": 20260826,
+        "seed_verified_by_input_replay": true,
+        "evaluation_directory": "test/rir_distance_21profile_t1rebalance_ep48_2spk_snr10_gpu",
+        "files": [
+          {
+            "role": "input",
+            "path": "assets/audio/noisy_p09_s030_input.wav",
+            "radius": null,
+            "target_count": null,
+            "metrics": {},
+            "duration_seconds": 4.5,
+            "sample_rate": 16000,
+            "channels": 1,
+            "subtype": "FLOAT",
+            "sha256": "336ad68a8d89e40f0144aadb6bf7625a47b9ba1e1a9524cdbf0beb3cf1c8a81e"
+          },
+          {
+            "role": "output",
+            "path": "assets/audio/noisy_p09_s030_r1m.wav",
+            "radius": 1,
+            "target_count": 1,
+            "metrics": {
+              "snr_db": 18.01551864650735,
+              "si_sdr_db": 17.946455001831055,
+              "input_si_sdr_db": 8.162744522094727,
+              "si_sdri_db": 9.783710479736328,
+              "attenuation_db": null,
+              "output_rms_db_vs_target": -0.07364932121540516
+            },
+            "duration_seconds": 4.5,
+            "sample_rate": 16000,
+            "channels": 1,
+            "subtype": "FLOAT",
+            "sha256": "881359943c6885cb1c3a60c279eefd45228dafc918ce15c0106dc56262f8df47"
+          },
+          {
+            "role": "output",
+            "path": "assets/audio/noisy_p09_s030_r2m.wav",
+            "radius": 2,
+            "target_count": 1,
+            "metrics": {
+              "snr_db": 17.30980622353846,
+              "si_sdr_db": 17.23390007019043,
+              "input_si_sdr_db": 8.162744522094727,
+              "si_sdri_db": 9.071155548095703,
+              "attenuation_db": null,
+              "output_rms_db_vs_target": -0.03915322989599151
+            },
+            "duration_seconds": 4.5,
+            "sample_rate": 16000,
+            "channels": 1,
+            "subtype": "FLOAT",
+            "sha256": "5be2abbff34a40ac3d0c0fd34108522c1ea78d59999a293a228f04aaaff78c98"
+          },
+          {
+            "role": "output",
+            "path": "assets/audio/noisy_p09_s030_r3m.wav",
+            "radius": 3,
+            "target_count": 1,
+            "metrics": {
+              "snr_db": 16.600759140886538,
+              "si_sdr_db": 16.519329071044922,
+              "input_si_sdr_db": 8.162744522094727,
+              "si_sdri_db": 8.356584548950195,
+              "attenuation_db": null,
+              "output_rms_db_vs_target": -0.02156057150250289
+            },
+            "duration_seconds": 4.5,
+            "sample_rate": 16000,
+            "channels": 1,
+            "subtype": "FLOAT",
+            "sha256": "801643cc269beb3f9c088027197a93ad9475ae07cb2e5a4702ede1b95257b61a"
+          },
+          {
+            "role": "output",
+            "path": "assets/audio/noisy_p09_s030_r4m.wav",
+            "radius": 4,
+            "target_count": 2,
+            "metrics": {
+              "snr_db": 20.577285617778305,
+              "si_sdr_db": 20.612895965576172,
+              "input_si_sdr_db": 9.997587203979492,
+              "si_sdri_db": 10.61530876159668,
+              "attenuation_db": null,
+              "output_rms_db_vs_target": -0.14370284973270417
+            },
+            "duration_seconds": 4.5,
+            "sample_rate": 16000,
+            "channels": 1,
+            "subtype": "FLOAT",
+            "sha256": "8fea9b68063ccd7bc7d2473557678b7f7d7f14abdc242ffa7717edea44111e8f"
+          }
+        ]
+      }
+    ]
+  },
+  "radius_sweep": {
+    "seed": 20260903,
+    "seed_verified_by_input_replay": true,
+    "samples": 63,
+    "radii": 41,
+    "step_m": 0.1,
+    "rows": 2583,
+    "short_sample_ids": [
+      1,
+      8,
+      12
+    ],
+    "short_rows": 123,
+    "metric": "20 log10(output RMS + 1e-12), not physical SPL",
+    "note": "Separate sweep from listening examples. Not the Inactive SI-SDR figure in the manuscript."
+  },
+  "results": {
+    "hero": "Verified 0–2-source clean suite: 29.2520/4.4052/61.9967; cell median then mean.",
+    "ablation": "Manuscript Table 1 values; sampling weights and aggregation not fully aligned across all rows.",
+    "challenging": "Verified re-evaluation, differs from manuscript Table 2.",
+    "RCE": "Manuscript RCE not reproduced. Not included in verified summary table."
+  }
+}
